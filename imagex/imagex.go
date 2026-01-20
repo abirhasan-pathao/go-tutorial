@@ -1,9 +1,10 @@
 package main
 
 import (
-	"golang.org/x/tour/pic"
 	"image"
 	"image/color"
+
+	"golang.org/x/tour/pic"
 )
 
 type Image struct{}
@@ -25,3 +26,5 @@ func main() {
 	m := Image{}
 	pic.ShowImage(m)
 }
+
+// copy the code and replace the code here https://go.dev/tour/methods/24 to see the actual image
