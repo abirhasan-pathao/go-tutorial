@@ -10,14 +10,13 @@ type Fetcher interface {
 }
 
 func crawl(url string, depth int, fetcher Fetcher, m map[string]bool, mutex *sync.Mutex, wg *sync.WaitGroup) {
+	defer wg.Done()
 	if depth <= 0 {
-		wg.Done()
 		return
 	}
 	body, urls, err := fetcher.Fetch(url)
 	if err != nil {
 		fmt.Println(err)
-		wg.Done()
 		return
 	}
 	fmt.Println("Crawling:", url)
@@ -35,7 +34,6 @@ func crawl(url string, depth int, fetcher Fetcher, m map[string]bool, mutex *syn
 			mutex.Unlock()
 		}
 	}
-	wg.Done()
 }
 
 func main() {
