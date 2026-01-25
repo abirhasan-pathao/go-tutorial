@@ -1,0 +1,7 @@
+init function multiple x
+importing multiplr package. [multiple] x
+typing speed++ keybr
+deeper in waitgroup [time based]
+functions with reciever, arguments and return type. + pointer reciever functions.
+
+vs code shortcuts for utility

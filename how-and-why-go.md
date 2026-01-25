@@ -38,13 +38,13 @@ Go is now Gone.
 
 ```mermaid
 flowchart TD
-    A[go run file.go] --> B[Read go.mod\nResolve module path and dependencies]
+    A[go run file.go] --> B[Read go.mod to Resolve module path and dependencies]
     B --> C[Download dependencies to GOPATH pkg mod]
-    C --> D[Load go files\nApply build constraints OS ARCH]
-    D --> E[Lexing and Parsing\nBuild AST\nCatch syntax errors]
+    C --> D[Load go files Apply build constraints by OS ARCH]
+    D --> E[Lexing and Parsing, Build AST, Catch syntax errors]
     E --> F[Type Checking]
     F --> G[Generate SSA]
-    G --> H[Optimizations\nInlining DCE etc]
+    G --> H[Optimizations Inlining DCE etc]
     H --> I[Generate Native Machine Code]
     I --> J[Link compiled packages]
     J --> K[Executable ready to run]
