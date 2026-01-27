@@ -15,6 +15,7 @@
 | `name-change` | Practice branch renaming | `git branch -m <old-name> <new-name>` |
 | `pull-request` | Practice PR workflow | fetched from origin, rebased the branch, put out a pull request |
 | `rebase-conflict` | Practice resolving rebase conflicts and conflict propagation | `git rebase`, resolved conflicts manually, `git rebase --continue` |
+| `merge-conflict` | Practice resolving merge conflicts | `git merge`, resolved conflicts manually, `git commit` |
 
 ---
 
