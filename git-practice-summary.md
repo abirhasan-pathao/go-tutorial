@@ -14,6 +14,7 @@
 | `learn-tag` | Practice tagging | `git tag`, `git tag -a`, `git push --tags` |
 | `name-change` | Practice branch renaming | `git branch -m <old-name> <new-name>` |
 | `pull-request` | Practice PR workflow | fetched from origin, rebased the branch, put out a pull request |
+| `rebase-conflict` | Practice resolving rebase conflicts and conflict propagation | `git rebase`, resolved conflicts manually, `git rebase --continue` |
 
 ---
 
